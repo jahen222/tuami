@@ -7,7 +7,7 @@
     <div class="container-fluid">
         <div class="box box-block bg-white">
             <div class="row no-margin ride-detail">
-                <div class="col-md-12"> 
+                <div class="col-md-12">
                 @if($terms->count() > 0)
 
                     <table class="table table-condensed" style="border-collapse:collapse;">
@@ -18,12 +18,12 @@
                             </tr>
                         </thead>
 
-                        <tbody> 
+                        <tbody>
                         @foreach($terms as $term)
 
                             <tr data-toggle="collapse" data-target="#term_{{$term->terms_id}}" class="accordion-toggle collapsed">
                                 <td class="col-md-11">{{ strip_tags($term->description) }}</td>
-            
+
                             </tr>
 
                         @endforeach
@@ -36,7 +36,7 @@
                     @endif
                 </div>
             </div>
-        </div>    
+        </div>
 
     </div>
 </div>
